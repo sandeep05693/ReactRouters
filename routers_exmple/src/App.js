@@ -12,9 +12,9 @@ function App() {
     
      <Router>
       <Routes>
-        <Route  path="/" element={<Home />} />
-        <Route  path="/shop" element={<Shop />} />
-        <Route  path="/about" element={<About />} />
+        <Route  exact caseSensitive={false} path="/" element={<Home />} />
+        <Route  caseSensitive={false} path="/shop" element={<Shop />} />
+        <Route  caseSensitive={false} path="/about" element={<About />} />
       </Routes>
     </Router>  
     </div>

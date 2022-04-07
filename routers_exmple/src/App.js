@@ -8,9 +8,11 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 function App() {
   return (
     <div className="App">
+    
+    <Router>
     <Nav/>
     
-     <Router>
+     
       <Routes>
         <Route  exact caseSensitive={false} path="/" element={<Home />} />
         <Route  caseSensitive={false} path="/shop" element={<Shop />} />
